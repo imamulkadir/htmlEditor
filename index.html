@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Author Info -->
+    <meta name="author" content="Imamul Kadir" />
+    <meta
+      name="description"
+      content="HTML Editor, file upload, download, and live preview."
+    />
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="btn-container">
+        <input
+          type="file"
+          id="htm_file"
+          name="htm_file"
+          accept=".htm, .html, text/html"
+        />
+        <button id="download_htm" class="download_btn">Download HTM</button>
+      </div>
+      <div class="link_container">
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/imamulkadir"
+          target="_blank"
+          class="social-link linkedin-link"
+          title="LinkedIn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            fill="currentColor"
+          >
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11.75 20h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.792-1.75-1.764s.784-1.764 1.75-1.764 1.75.792 1.75 1.764-.784 1.764-1.75 1.764zm13.25 11.268h-3v-5.604c0-1.337-.024-3.064-1.866-3.064-1.867 0-2.153 1.459-2.153 2.968v5.7h-3v-10h2.879v1.367h.041c.401-.761 1.379-1.562 2.838-1.562 3.034 0 3.596 1.997 3.596 4.592v5.603z"
+            />
+          </svg>
+        </a>
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/imamulkadir"
+          target="_blank"
+          class="social-link github-link"
+          title="GitHub"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            fill="currentColor"
+          >
+            <path
+              d="M12 0C5.371 0 0 5.372 0 12c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.58 0-.287-.01-1.045-.015-2.05-3.338.726-4.042-1.611-4.042-1.611-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.084 1.84 1.238 1.84 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.774.419-1.304.762-1.604-2.665-.305-5.467-1.334-5.467-5.934 0-1.31.468-2.381 1.236-3.222-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.494 11.494 0 013.003-.404c1.018.005 2.043.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.119 3.176.77.841 1.234 1.912 1.234 3.222 0 4.61-2.807 5.625-5.479 5.921.43.372.814 1.102.814 2.222 0 1.604-.014 2.898-.014 3.293 0 .322.216.697.825.579C20.565 21.796 24 17.302 24 12c0-6.628-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div id="editor-container">
+      <div id="editor"></div>
+      <div id="output">
+        <iframe id="output-frame"></iframe>
+      </div>
+      <!-- <button id="format-button">Format Code</button> -->
+    </div>
+
+    <!-- Monaco Editor CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.40.0/min/vs/loader.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
